@@ -1,0 +1,1 @@
+[{"route":"person","properties":["name","age","petIds"],"data":"[{\"id\":1,\"name\":\"Tim\",\"age\":11,\"petIds\":[1,2]},{\"id\":2,\"name\":\"sofie\",\"age\":8,\"petIds\":[]}]"},{"route":"pet","properties":["name"],"data":[{"id":1,"name":"bliksem"},{"id":2,"name":"duvel"}]}]
