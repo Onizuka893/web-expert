@@ -16,7 +16,12 @@ export class JsonReader {
   public readJson(): JsonServer[] {
     try {
       const data = fs.readFileSync(this.filePath, "utf-8");
-      return JSON.parse(data);
+      const json = JSON.parse(data);
+      for (let i = 0; i < json.length; i++) {
+        const element: JsonServer = json[i];
+        element.data = JSON.stringify(element.data);
+      }
+      return json;
     } catch (error) {
       console.error("Error reading or parsing JSON:", error);
       return []; // wat moet doen error!!
